@@ -66,11 +66,13 @@ village/
 
 - [x] Born
 - [x] First commit - wild & crazy
-- [ ] First house built
-- [ ] First inhabitant arrives (with quirks)
-- [ ] First council meeting (serious)
-- [ ] First tavern brawl (fun)
-- [ ] History begins
+- [x] First house built
+- [x] First inhabitant arrives (with quirks)
+- [x] First council meeting (serious)
+- [x] First tavern brawl (fun)
+- [x] History begins
+- [ ] Codespace deployment
+- [ ] OpenClaw Gateway running
 
 ## The Flag
 

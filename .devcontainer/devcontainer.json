@@ -1,11 +1,8 @@
 {
-  "name": "Independence 2026 Village",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "name": "Independence 2026 - Village",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "customizations": {
     "vscode": {
@@ -15,6 +12,12 @@
       ]
     }
   },
-  "postCreateCommand": "npm install -g openclaw && openclaw gateway status || echo 'Gateway install attempted'",
-  "remoteUser": "vscode"
+  "postCreateCommand": "npm install -g openclaw",
+  "portsAttributes": {
+    "3000": {
+      "label": "OpenClaw Gateway",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "workspaceFolder": "/workspace/independence-2026"
 }
