@@ -12,12 +12,17 @@
       ]
     }
   },
-  "postCreateCommand": "npm install -g openclaw",
+  "postCreateCommand": "npm install -g openclaw && npm run setup",
   "portsAttributes": {
     "3000": {
       "label": "OpenClaw Gateway",
       "onAutoForward": "openBrowser"
+    },
+    "8080": {
+      "label": "Village Web UI",
+      "onAutoForward": "notify"
     }
   },
-  "workspaceFolder": "/workspace/independence-2026"
+  "workspaceFolder": "/workspace/independence-2026",
+  "onCreateCommand": "chmod +x setup-village.sh"
 }

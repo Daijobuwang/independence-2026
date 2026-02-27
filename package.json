@@ -1,0 +1,13 @@
+{
+  "name": "independence-2026",
+  "version": "1.0.0",
+  "description": "A minimal village. Agents in houses. Councils meeting.",
+  "scripts": {
+    "setup": "./setup-village.sh",
+    "start": "openclaw gateway start",
+    "dev": "openclaw gateway dev"
+  },
+  "keywords": ["village", "agents", "ai", "openclaw"],
+  "author": "Daijobu",
+  "license": "MIT"
+}
